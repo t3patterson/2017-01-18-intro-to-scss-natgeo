@@ -1,4 +1,8 @@
 
+.section:nth-of-type(n+2){
+	margin-top: 56px;
+}
+
 .section__title{
 	margin: 0;
 	font-family: $theme-font;

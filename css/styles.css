@@ -32,7 +32,7 @@
 
 .nav__icon {
   font-size: 36px;
-  margin: 0 10px;
+  margin: 0 6px;
   vertical-align: center; }
 
 .nav__tab-link {
@@ -46,13 +46,15 @@
 
 @media screen and (min-width: 600px) {
   .nav__icon {
-    font-size: 48px; } }
+    font-size: 48px;
+    margin-left: 9px; } }
 @media screen and (min-width: 1000px) {
   .nav__full-menu {
     display: block; }
 
   .nav__small-menu {
-    display: none; } }
+    display: none;
+    margin-left: 20px; } }
 .header {
   font-family: "GillSans";
   /*background: yellow;*/
@@ -108,6 +110,9 @@
   .footer__follow-column {
     width: 33.33%;
     border-left: 1px solid #aaa; } }
+.section:nth-of-type(n+2) {
+  margin-top: 56px; }
+
 .section__title {
   margin: 0;
   font-family: "GillSans", "Avenir", "sans-serif";
@@ -126,6 +131,7 @@
   margin: 12px auto 30px auto; }
 
 .user-links {
+  margin-top: 24px;
   background: #333;
   color: #fff; }
 
@@ -198,6 +204,8 @@ img {
 ul {
   margin: 0;
   padding: 0; }
+  ul li {
+    list-style-type: circle; }
 
 #app-container {
   padding-top: 44px; }
@@ -211,13 +219,12 @@ ul {
 
 .u_max-container {
   max-width: 800px;
-  margin: 0 auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 /* .icon styles */
 .icon {
-  display: inline-block;
-  margin-left: 2px;
-  margin-right: 2px; }
+  display: inline-block; }
 
 /* .link styles */
 .link_underline {
@@ -251,5 +258,15 @@ ul {
 .button_full-width {
   display: block;
   width: 100%; }
+
+.special-feature_photo-of-year {
+  margin: auto;
+  width: 80%;
+  padding-bottom: 40%; }
+
+.special-feature_photo-of-year__enlarge-icon {
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute; }
 
 /*# sourceMappingURL=styles.css.map */
