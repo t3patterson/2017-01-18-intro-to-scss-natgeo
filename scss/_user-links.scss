@@ -1,0 +1,44 @@
+
+.user-links{
+	background: #333;
+	color: #fff;
+}
+
+.user-links__column{
+   /* Exhibit B.2.iii - Responsive Column Element(mobile)*/
+	width: 100%;
+	padding: 36px;
+	text-align: center;
+}
+
+.user-links__title{
+	font-weight: 100;
+	font-family: $theme-font;
+	letter-spacing: 2px;
+}
+
+.user-links__link-icon{
+	font-size: 21px;
+}
+
+
+.user-links__body-text{
+	// color: inherit;
+	font-size: 14px;
+	font-family: $article_title_font;
+}
+
+
+
+@media screen and (min-width: 600px){	
+	.user-links__column{
+		width: 50%;
+	}	
+	
+}
+
+@media screen and (min-width: 1000px){
+	.user-links__column{
+		width: 25%;
+	}
+}

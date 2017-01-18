@@ -1,0 +1,98 @@
+*{
+	box-sizing: border-box;
+}
+
+@import "./variables";
+@import "./nav";
+@import "./header";
+@import "./footer";
+@import "./section";
+@import "./user-links";
+@import "./article_synopsis";
+
+// DEMO:
+//  (0) scss imports             :  ^^ ... then put .link, .button, .icon into separate modules
+//  (1) scss nesting             :  .u_column-container > *
+//  (2) scss universal-variables :  fix .link_ig, .link_tw, etc.
+//  (2) scss local-variables     :  fix .link_ig, .link_tw, etc.	
+//  (3) scss mixins              :  absolute-center
+
+/* defaults */
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+ul { 
+	margin: 0;
+	padding: 0;
+}
+
+#app-container{
+	padding-top: 44px;
+}
+
+.u_column-container{
+	font-size: 0;
+	> * { 	
+		display: inline-block; 
+		vertical-align: top; 
+		font-size: medium;
+	}
+}
+
+.u_max-container{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+
+/* .icon styles */
+.icon{
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+/* .link styles */
+.link_underline{
+	display:inline-block; 
+	border-bottom: 2px solid $theme-yellow; 
+}
+.link_tw{color: cornflowerblue; }
+.link_fb{color: darkblue; }
+.link_ig{color: steelblue; }
+
+
+/* .button styles */
+.button{
+	text-align: center;
+	border: 2px #333 solid;
+	background: #fff;
+	outline: 0;
+}
+
+.button_sm{
+	padding: 9px 6px;
+	font-size: 12px;
+}
+
+.button_lg{
+	padding: 21px 12px;
+	font-size: 21px;	
+}
+
+.button_full-width{
+	display: block;
+	width: 100%;
+}
+
+

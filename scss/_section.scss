@@ -1,0 +1,20 @@
+
+.section__title{
+	margin: 0;
+	font-family: $theme-font;
+	font-weight: 200;
+	letter-spacing: 6px;
+	font-size: 24px;
+}
+
+.section__link{
+	font-family: $theme-font;
+	font-weight: 200;
+	display: inline-block;
+	margin: 18px 0 36px 0; 
+}
+
+.section__button{
+	max-width: 600px;
+	margin: 12px auto 30px auto;
+}

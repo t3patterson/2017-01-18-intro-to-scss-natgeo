@@ -1,0 +1,46 @@
+.footer{
+	background: #ddd;
+	padding: 21px 0 18px 0; 
+}
+
+
+.footer__subscribe-column,
+.footer__follow-column{
+	padding: 18px;
+	
+}
+
+.footer__title {
+	font-size: 24px;
+	font-family: "GillSans";
+	font-weight: 200;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.footer__subscribe-column{
+	width: 100%;
+}
+
+.footer__follow-column{
+	width: 100%;
+}
+
+@media screen and (min-width: 600px){	
+	
+	.footer{
+		padding-left: 18px;
+	}
+	
+
+	.footer__subscribe-column{	
+		width: 66.67%;
+		border-left: 1px solid #aaa;
+	}
+
+	.footer__follow-column{		
+		width: 33.33%;
+		border-left: 1px solid #aaa;
+	}
+		
+}

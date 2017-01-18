@@ -1,0 +1,67 @@
+.nav{
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	font-family: "GillSans";
+	color: #333;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 3px;
+}
+
+.nav__logo-column{
+	width: 33.33%;
+	text-align: left;
+}
+
+.nav__logo-img{
+	width: 120px;
+}
+
+.nav__options-column{
+	width: 66.67%;
+	display: inline-block;
+	text-align: right;
+}
+
+.nav__small-menu{
+	display: block;		
+}
+
+.nav__full-menu{
+	display: none;
+}
+
+.nav__icon{
+	font-size: 36px;
+	margin: 0 10px;
+	vertical-align: center;
+}
+
+
+
+.nav__tab-link{
+	width: 25%;
+	margin-top: 12px;
+	line-height: 28px;
+	text-align: center;
+	color: $theme-grey;
+	border-left: 1px solid $theme-yellow;
+	letter-spacing: 2px;
+}
+
+@media screen and (min-width: 600px){
+	.nav__icon{
+		font-size: 48px;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	.nav__full-menu{
+		display: block;
+	}
+
+	.nav__small-menu{
+		display: none;
+	}
+}
