@@ -260,6 +260,8 @@ ul {
   width: 100%; }
 
 .special-feature_photo-of-year {
+  background-image: url("../images/photo-of-year-01.jpg");
+  background-size: cover;
   margin: auto;
   width: 80%;
   padding-bottom: 40%; }

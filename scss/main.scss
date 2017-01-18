@@ -102,6 +102,8 @@ ul {
 }
 
 .special-feature_photo-of-year{
+	background-image: url('../images/photo-of-year-01.jpg'); 
+	background-size: cover;
 	margin: auto;
 	width: 80%;
 	padding-bottom: 40%;
@@ -111,6 +113,5 @@ ul {
 	font-size: 100px;
 	color: rgba(255,255,255,.7);
 	position: absolute;
-	
 }
 
