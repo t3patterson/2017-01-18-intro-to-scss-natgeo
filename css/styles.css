@@ -1,6 +1,43 @@
 * {
   box-sizing: border-box; }
 
+/* defaults */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  width: 100%;
+  display: block; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    list-style-type: circle; }
+
+#app-container {
+  padding-top: 44px; }
+
+.button {
+  text-align: center;
+  border: 2px #333 solid;
+  background: #fff;
+  outline: 0;
+  background-color: lightgray; }
+
+.button_sm {
+  padding: 9px 6px;
+  font-size: 12px; }
+
+.button_lg {
+  padding: 21px 12px;
+  font-size: 21px; }
+
+.button_full-width {
+  display: block;
+  width: 100%; }
+
 .nav {
   position: fixed;
   top: 0;
@@ -57,7 +94,6 @@
     margin-left: 20px; } }
 .header {
   font-family: "GillSans";
-  /*background: yellow;*/
   padding: 50px 0; }
 
 .header__title {
@@ -128,7 +164,12 @@
 
 .section__button {
   max-width: 600px;
-  margin: 12px auto 30px auto; }
+  margin: 12px auto 30px auto;
+  color: #333;
+  background-color: #fecd2f; }
+  .section__button:hover {
+    color: #fecd2f;
+    background-color: #333; }
 
 .user-links {
   margin-top: 24px;
@@ -192,24 +233,7 @@
   .article_synopsis__body-text {
     border-left: 0;
     padding-left: 0; } }
-/* defaults */
-a {
-  text-decoration: none;
-  color: inherit; }
-
-img {
-  width: 100%;
-  display: block; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-  ul li {
-    list-style-type: circle; }
-
-#app-container {
-  padding-top: 44px; }
-
+/* utility classes */
 .u_column-container {
   font-size: 0; }
   .u_column-container > * {
@@ -232,43 +256,42 @@ ul {
   border-bottom: 2px solid #fecd2f; }
 
 .link_tw {
-  color: cornflowerblue; }
+  color: #38a9ee;
+  background-color: #333; }
+  .link_tw:hover {
+    color: #333;
+    background-color: #38a9ee; }
 
 .link_fb {
-  color: darkblue; }
+  color: #425499;
+  background-color: #333; }
+  .link_fb:hover {
+    color: #333;
+    background-color: #425499; }
 
 .link_ig {
-  color: steelblue; }
+  color: #577da5;
+  background-color: #333; }
+  .link_ig:hover {
+    color: #333;
+    background-color: #577da5; }
 
 /* .button styles */
-.button {
-  text-align: center;
-  border: 2px #333 solid;
-  background: #fff;
-  outline: 0; }
-
-.button_sm {
-  padding: 9px 6px;
-  font-size: 12px; }
-
-.button_lg {
-  padding: 21px 12px;
-  font-size: 21px; }
-
-.button_full-width {
-  display: block;
-  width: 100%; }
-
 .special-feature_photo-of-year {
   background-image: url("../images/photo-of-year-01.jpg");
   background-size: cover;
   margin: auto;
   width: 80%;
-  padding-bottom: 40%; }
+  padding-bottom: 40%;
+  position: relative; }
+  .special-feature_photo-of-year > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); }
 
 .special-feature_photo-of-year__enlarge-icon {
   font-size: 100px;
-  color: rgba(255, 255, 255, 0.7);
-  position: absolute; }
+  color: rgba(255, 255, 255, 0.7); }
 
 /*# sourceMappingURL=styles.css.map */

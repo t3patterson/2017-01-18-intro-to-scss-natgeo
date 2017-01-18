@@ -1,0 +1,24 @@
+.button{
+	text-align: center;
+	border: 2px #333 solid;
+	background: #fff;
+	outline: 0;
+	background-color: lightgray;
+}
+
+.button_sm{
+	padding: 9px 6px;
+	font-size: 12px;
+}
+
+.button_lg{
+	padding: 21px 12px;
+	font-size: 21px;	
+}
+
+.button_full-width{
+	display: block;
+	width: 100%;
+	
+}
+

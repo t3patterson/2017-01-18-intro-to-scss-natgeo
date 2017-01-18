@@ -1,0 +1,20 @@
+@mixin invert-on-hover($txt-color, $bg-color){
+	color: $txt-color;
+	background-color: $bg-color;
+	
+	&:hover{
+		color: $bg-color;
+		background-color: $txt-color;
+	}
+
+}
+
+@mixin absolute-center-only-child(){
+	
+ position: relative;
+ 	> * {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}

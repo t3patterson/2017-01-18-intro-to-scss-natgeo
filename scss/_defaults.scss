@@ -1,0 +1,24 @@
+/* defaults */
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+
+ul { 
+	margin: 0;
+	padding: 0;
+
+	li {
+		list-style-type: circle;
+	}
+
+}
+
+#app-container{
+	padding-top: 44px;
+}

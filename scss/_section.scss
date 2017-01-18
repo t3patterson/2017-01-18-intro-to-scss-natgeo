@@ -21,4 +21,5 @@
 .section__button{
 	max-width: 600px;
 	margin: 12px auto 30px auto;
+	@include invert-on-hover(#333, $theme-yellow);
 }

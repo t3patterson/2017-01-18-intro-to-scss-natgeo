@@ -1,8 +1,13 @@
 *{
 	box-sizing: border-box;
 }
-
 @import "./variables";
+@import "./mixins";
+
+// NOTE-1 Either-or for importing
+@import "./_defaults.scss";
+@import "./_button.scss";
+
 @import "./nav";
 @import "./header";
 @import "./footer";
@@ -17,32 +22,9 @@
 //  (2) scss local-variables     :  fix .link_ig, .link_tw, etc.	
 //  (3) scss mixins              :  absolute-center
 
-/* defaults */
 
-a{
-	text-decoration: none;
-	color: inherit;
-}
 
-img{
-	width: 100%;
-	display: block;
-}
-
-ul { 
-	margin: 0;
-	padding: 0;
-
-	li {
-		list-style-type: circle;
-	}
-
-}
-
-#app-container{
-	padding-top: 44px;
-}
-
+/* utility classes */
 .u_column-container{
 	font-size: 0;
 	> * { 	
@@ -73,45 +55,47 @@ ul {
 	display:inline-block; 
 	border-bottom: 2px solid $theme-yellow; 
 }
-.link_tw{color: cornflowerblue; }
-.link_fb{color: darkblue; }
-.link_ig{color: steelblue; }
+
+.link_tw{
+	@include invert-on-hover($color-twitter, #333);
+	// color: $color-twitter;
+	// background-color: #333;
+	// 
+	// &:hover{
+	// 	color: #333;
+	// 	background-color: $color-twitter;
+	// }
+}
+
+.link_fb{	
+	@include invert-on-hover($color-facebook, #333);
+}
+.link_ig{ 
+	@include invert-on-hover($color-instagram, #333);
+}
 
 
 /* .button styles */
-.button{
-	text-align: center;
-	border: 2px #333 solid;
-	background: #fff;
-	outline: 0;
-}
-
-.button_sm{
-	padding: 9px 6px;
-	font-size: 12px;
-}
-
-.button_lg{
-	padding: 21px 12px;
-	font-size: 21px;	
-}
-
-.button_full-width{
-	display: block;
-	width: 100%;
-}
-
 .special-feature_photo-of-year{
 	background-image: url('../images/photo-of-year-01.jpg'); 
 	background-size: cover;
 	margin: auto;
 	width: 80%;
 	padding-bottom: 40%;
+	
+	@include absolute-center-only-child();
+	// position: relative;
+	// > * {
+	// 	position: absolute;
+	// 	top: 50%; left: 50%;
+	// 	transform: translateX(-50%) translateY(-50%);
+	// }
 }
 
 .special-feature_photo-of-year__enlarge-icon{
 	font-size: 100px;
 	color: rgba(255,255,255,.7);
-	position: absolute;
+	
+	
 }
 
